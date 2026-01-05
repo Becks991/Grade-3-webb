@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.instagram.com/rebecka_tengbom/" target="_blank">External Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Rebecka Tengbom</h1>
+    <p>This is where I share a bit about who I am and what I love.</p>
+  </div>
+</section>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h1>About Me</h1>
+      <div class="about-container">
+        <figure>
+          <img src="Images/profile-pic.JPG" alt="A portrait of me">
+          <figcaption>A portrait of me</figcaption>
+        </figure>
+
+        <div class="about-text">
+          <p>
+ I grew up in a small city called Lidköping, and one of my favorite childhood memories is riding 
+  my bike down to the lakeside during summer evenings. I would sit by the water, watching the sunset 
+  reflect across Lake Vänern, completely unaware that those quiet moments would later inspire my love 
+  for creativity and visual design.          
+          </p>
+          <table>
+            <tr><th>Job goal</th><td>graphic Designer</td></tr>
+            <tr><th>City</th><td>Lidköping</td></tr>
+            <tr><th>Favorite Tool</th><td>Illustrator</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests-section">
+      <h2>Academic Interests & Hobbies</h2>
+      <p>
+    My curiosity for web development began when I took an introductory course in college. 
+    What started as a simple assignment quickly grew into a passion for solving problems, 
+    building interactive experiences, and understanding how technology shapes the world around us.      </p>
+      <ul>
+        <li><strong>Video Games</strong> – I enjoy exploring different genres, especially story-driven titles. 
+        Games have taught me a lot about design, creativity, and how meaningful user experiences are built. </li>
+        <li><strong>Hiking</strong> – Getting out into nature is one of my favorite ways to recharge. 
+    Long walks on forest trails or along the coastline help me clear my mind and find inspiration.</li>
+        <li><strong>Photography</strong> – I love capturing small moments and beautiful landscapes. 
+    Photography encourages me to slow down, observe details, and appreciate the world from different perspectives.</li>
+      </ul>
+
+      <div class="photo-grid">
+        <figure>
+          <img src="Images/picture-1.jpg" alt="Picture of my friend through a mirror">
+          <figcaption>Picture i took of my friend through a mirror</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/picture-2.jpg" alt="A scenic view of the coastline">
+          <figcaption>A scenic view i took of som street lights in my homwtown</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="goals-section">
+      <h2>Future Goals</h2>
+      <p>
+One of my long-term goals is to become a graphic designer so I can create visually engaging 
+  and user-friendly websites that make a meaningful impact. I’m passionate about combining 
+  aesthetics with functionality, and I hope to design digital experiences that are both beautiful 
+  and intuitive for people to use.      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="mailto:example@example.com" method="post" enctype="text/plain">
+       <div class="form-row-group">
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+         <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+</div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!--Footer Section-->
+  <footer>
+    <p>Contact: Rebecka@example.com | © 2025 Rebecka Tengbom</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
