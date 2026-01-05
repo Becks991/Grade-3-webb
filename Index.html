@@ -97,23 +97,52 @@ One of my long-term goals is to become a graphic designer so I can create visual
     <section id="contact" class="contact-section">
       <h2>Contact Me</h2>
       <form action="mailto:example@example.com" method="post" enctype="text/plain">
-       <div class="form-row-group">
-        <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
+       <!-- First Name & Last Name -->
+    <div class="form-row-group">
+      <div class="form-row">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-row">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+    </div>
 
-         <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-</div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
+    <!-- Email -->
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-row">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+
+    <!-- Subject -->
+    <div class="form-row">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+
+    <!-- Message -->
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+
+    <!-- Buttons -->
+    <div class="form-row-group">
+      <div class="form-row">
+        <button type="submit">Submit</button>
+      </div>
+      <div class="form-row">
+        <button type="reset">Clear</button>
+      </div>
+    </div>
+ </form>
     </section>
   </main>
 
