@@ -275,6 +275,18 @@ button[type="reset"]:hover {
   transform: translateY(-2px);
 }
 
+/* Röd border vid fel */
+input.error, textarea.error {
+  border-color: red;
+}
+
+/* Felmeddelande styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
 /* ---------- Footer ---------- */
 footer {
   text-align: center;

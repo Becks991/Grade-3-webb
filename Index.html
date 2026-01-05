@@ -96,7 +96,8 @@ One of my long-term goals is to become a graphic designer so I can create visual
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <h2>Contact Me</h2>
-      <form action="mailto:example@example.com" method="post" enctype="text/plain">
+      <form id="contactForm" novalidate action="mailto:example@example.com" method="post" enctype="text/plain">
+
        <!-- First Name & Last Name -->
     <div class="form-row-group">
       <div class="form-row">
@@ -113,6 +114,7 @@ One of my long-term goals is to become a graphic designer so I can create visual
     <div class="form-row">
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
+      <small class="error-message"></small>
     </div>
 
     <!-- Phone Number -->
