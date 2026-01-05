@@ -62,6 +62,8 @@
     My curiosity for web development began when I took an introductory course in college. 
     What started as a simple assignment quickly grew into a passion for solving problems, 
     building interactive experiences, and understanding how technology shapes the world around us.      </p>
+
+     <!-- List of interests -->
       <ul>
         <li><strong>Video Games</strong> – I enjoy exploring different genres, especially story-driven titles. 
         Games have taught me a lot about design, creativity, and how meaningful user experiences are built. </li>
@@ -71,6 +73,7 @@
     Photography encourages me to slow down, observe details, and appreciate the world from different perspectives.</li>
       </ul>
 
+        <!-- Image gallery -->
       <div class="photo-grid">
         <figure>
           <img src="Images/picture-1.jpg" alt="Picture of my friend through a mirror">
@@ -125,14 +128,21 @@ One of my long-term goals is to become a graphic designer so I can create visual
 
     <!-- Subject -->
     <div class="form-row">
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="subject" required>
-    </div>
+  <label for="subject">Subject</label>
+  <select id="subject" name="subject" required>
+    <option value="" disabled selected>Select a subject</option>
+    <option value="general">General Inquiry</option>
+    <option value="support">Support</option>
+    <option value="feedback">Feedback</option>
+    <option value="collaboration">Collaboration</option>
+  </select>
+</div>
 
     <!-- Message -->
     <div class="form-row">
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="4" maxlength="30" required></textarea>
+   
       <small id="message-counter">0 / 30 characters</small>
     </div>
 
@@ -146,6 +156,7 @@ One of my long-term goals is to become a graphic designer so I can create visual
       </div>
     </div>
  </form>
+ <!--message when succesfull sumbit-->
  <p id="success-message" style="color:green; display:none;">Form submitted successfully!</p>
     </section>
   </main>
@@ -157,5 +168,6 @@ One of my long-term goals is to become a graphic designer so I can create visual
   </footer>
 
 </body>
+ <!-- External JavaScript -->
 <script src="script.js"></script>
 </html>
