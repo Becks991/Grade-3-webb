@@ -9,8 +9,8 @@ form.addEventListener('submit', function(e) {
 
   if (isValid) {
     successMessage.style.display = 'block';
-    // Här kan du lägga till kod för att skicka formuläret via AJAX / API
-    form.reset(); // töm formuläret efter submit
+   
+    form.reset(); 
     emailInput.classList.remove('error');
     errorMessage.style.display = 'none';
   } else {
@@ -34,3 +34,18 @@ function validateEmail() {
     return true;
   }
 }
+
+const messageInput = document.getElementById('message');
+const messageCounter = document.getElementById('message-counter');
+const maxChars = 30;
+
+messageInput.addEventListener('input', () => {
+  const currentLength = messageInput.value.length;
+  messageCounter.textContent = `${currentLength} / ${maxChars} characters`;
+
+  if (currentLength >= maxChars) {
+    messageCounter.classList.add('max'); 
+  } else {
+    messageCounter.classList.remove('max');
+  }
+});
